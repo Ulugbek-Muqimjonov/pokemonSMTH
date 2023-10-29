@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+.site-main {
+    flex-grow: 1;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.site-header__form {
+    width: 378px;
+    gap: 20px;
+}
+.site-header__sort-btn-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero__pokemons-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    /* gap: 20px; */
+    row-gap: 30px;
+    margin: 0;
+    padding-left: 0;
+}
+.hero__pokemons-item {
+    position: relative;
+    width:290px;
+    height: 430px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #0000003d;
+    transition: transform 0.5s ease;
+}
+.hero__pokemons-item:hover {
+    transform: scale(0.97);
+}
+.hero__pokemons-item-img {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.hero__pokemons-item-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.hero__pokemons-item-inner2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.hero__pokemons-item-name {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+.hero__pokemons-character {
+    font-weight: 400;
+}
+.hero__item-pokemons-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    background-color: rgb(22, 37, 0);
+}
+.mark {
+    background-color: #5b5f01;
+    color: #fff;
+}
+.modal-list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.modal-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid;
+    font-weight: bold;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemons</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- header start -->
+    <header class="site-header">
+        <div class="container">
+            <img class="site-hero__img" src="./images/pakemon.png" alt="">
+            <div class="site-header__wrap ">
+                <form class="site-header__form d-flex justify-content-center align-items-center">
+                    <input class="site-header__form-inp form-control" type="search" name="user_serach" placeholder="Search..." aria-label="enter your search pokemons">
+                    <button class="site-header__search-btn btn btn-success">Search</button>
+                </form>
+                <div class="site-header__sort-btn-list">
+                    <button class="site-hero__sort-btn site-hero__sort-btn--a-z btn btn-outline-success">A-Z</button>
+                    <button class="site-hero__sort-btn site-hero__sort-btn--z-a btn btn-outline-success">Z-A</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="site-main">
+        <section class="site-main__hero hero">
+            <div class="container">
+                <div class="hero__wrap">
+                    <ul class="hero__pokemons-list">
+                        <template class="hero__temp">
+                            <li class="hero__pokemons-item shadow">
+                                <img class="hero__pokemons-item-img" src="" alt="">
+                                <strong class="hero__pokemons-item-name">ivisaur</strong>
+                                <div class="hero__pokemons-item-inner">
+                                    <strong>
+                                        weight:
+                                        <span class="hero__item-pokemons-weight hero__pokemons-character">10</span>
+                                    </strong>
+                                    <strong>
+                                        height:
+                                        <span class="hero__item-pokemons-height hero__pokemons-character">12</span>
+                                    </strong>
+                                </div>
+                                <div class="hero__pokemons-item-inner2">
+                                    <strong>
+                                        egg: 
+                                        <span class="hero__item-pokemons-egg hero__pokemons-character"></span>
+                                    </strong>
+                                    <strong>
+                                        candy-count:
+                                        <span class="hero__item-pokemons-candy-count hero__pokemons-character"></span>
+                                    </strong>
+                                </div>
+                                <button class="hero__item-pokemons-btn btn btn-success" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    more
+                                </button>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+    </footer>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold text-center" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="modal-list">
+                        <li class="modal-item modal-item--candy"></li>
+                        <li class="modal-item modal-item--avg_spawns"></li>
+                        <li class="modal-item modal-item--spawn_time"></li>
+                        <li class="modal-item modal-item--multipliers"></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/pokemons.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
